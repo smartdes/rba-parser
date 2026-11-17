@@ -1,0 +1,87 @@
+# ==============================================================================
+# Git Ignore Configuration - M-PESA Statement Parser
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. SENSITIVE PERSONAL & FINANCIAL DATA (CRITICAL)
+# ------------------------------------------------------------------------------
+# Never commit private financial statements, transaction records, or credentials
+*.pdf
+*.PDF
+*.csv
+*.CSV
+*.xlsx
+*.xls
+raw_statement.csv
+clean_statement.csv
+MPESA_Statement.pdf
+data/
+output/
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# 2. PYTHON COMPILED & RUNTIME ARTIFACTS
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# 3. VIRTUAL ENVIRONMENTS
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 4. TESTING, COVERAGE & CODE QUALITY
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# 5. IDE & OS ARTIFACTS
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
